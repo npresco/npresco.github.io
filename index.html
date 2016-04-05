@@ -9,9 +9,9 @@
   <title>Noah Prescott</title>
   <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 ">
-  <link type="text/css" rel="stylesheet" href="/assets/application-ffdaf5fc1706057a2cb47f1a70e86961c09897629fba2a65a1c2bf0a57a01df6.css">
+  <link type="text/css" rel="stylesheet" href="/assets/application-daef247713e186e2002dfe53971558508abca863978e40f18a2488e29bf06305.css">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="canonical" href="http://noahprescott.com/">
+  <link href='https://fonts.googleapis.com/css?family=Sigmar+One|Comfortaa|Rock+Salt|Special+Elite' rel='stylesheet' type='text/css'>  <link rel="canonical" href="http://noahprescott.com/">
   <link rel="alternate" type="application/rss+xml" title="Noah Prescott" href="http://noahprescott.com/feed.xml">
 
 </head>
@@ -19,7 +19,7 @@
 
   <body>
 
-    <header class="centered-navigation" role="banner">
+    <!--<header class="centered-navigation" role="banner">
   <div class="centered-navigation-wrapper">
     <a href="javascript:void(0)" class="mobile-logo">
       <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png" alt="Logo image">
@@ -59,22 +59,38 @@
     </nav>
   </div>
 </header>
+-->
 
-
-        <div class="hero">
-  <div class="hero-inner">
-    <a href="" class="hero-logo"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png
-" alt="Logo Image"></a>
-    <div class="hero-copy">
-      <!--<h1>Short description of Product</h1>-->
-      <!--<p>A few reasons why this product is worth using, who it's for and why they need it.</p>  -->
-    </div>
-  </div>
-  <a class="scroll-on-page-link" href="#scroll-link-1"></a>
+        <div class="js-menu-trigger sliding-panel-button" id="nav-icon3">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
 </div>
 
+<nav class="js-menu sliding-panel-content">
+  <ul>
+    <li><a class="scroll-on-page-link" href="#hero">Home</a></li>
+    <li><a class="scroll-on-page-link" href="#flex-boxes">Portfolio</a></li>
+    <li><a class="scroll-on-page-link" href="#side-image">Resume</a></li>
+  </ul>
+</nav>
 
-<div class="flex-boxes" id="scroll-link-1">
+<div class="js-menu-screen sliding-panel-fade-screen"></div>
+
+<div class="hero" id='hero'>
+  <div class="hero-inner">
+    <a href="" class="hero-logo"><img src="" alt="Logo Image"></a>
+    <div id="typed" style="visibility:hidden;">
+      <p>I came here to chew <span id='fat'>bubblegum</span> and <span id='angry'>kick ass</span>,<br/> <em>and I am all out of bubblegum.</em></p>
+    </div>
+    <br/>
+    <div class="hero-copy"></div>
+  </div>
+  <a class="scroll-on-page-link" href="#flex-boxes"></a>
+</div>
+
+<div class="flex-boxes" id="flex-boxes">
   <a href="javascript:void(0)" class="flex-box flex-box-big">
 eaque officiis, unde illo, earum voluptatum rerum, reiciendis ipsa ex dolorem a dicta, maxime aliquam.</p>
   </a>
@@ -105,37 +121,150 @@ eaque officiis, unde illo, earum voluptatum rerum, reiciendis ipsa ex dolorem a 
   </a>
 </div>
 
-    <footer class="footer" role="contentinfo">
+<div class="side-image" id='side-image'>
+  <div class="images-wrapper"></div>
+    <div class="side-image-content">
+      <h4>Topic Name</h4>
+      <h1>Message with a gradient image</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda nihil suscipit obcaecati sit, cum quod corporis adipisci ipsam, fugiat, quae error. Eaque commodi, dicta quidem explicabo mollitia inventore quibusdam.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda nihil suscipit obcaecati sit, cum quod corporis adipisci ipsam, fugiat, quae error. Eaque commodi, dicta quidem explicabo mollitia inventore quibusdam.</p>
+  </div>
+</div>
+
+<div class="side-image2" id='side-image2'>
+  <div class="images-wrapper">
+      <h4>Topic Name</h4>
+      <h1>Message with a gradient image</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda nihil suscipit obcaecati sit, cum quod corporis adipisci ipsam, fugiat, quae error. Eaque commodi, dicta quidem explicabo mollitia inventore quibusdam.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda nihil suscipit obcaecati sit, cum quod corporis adipisci ipsam, fugiat, quae error. Eaque commodi, dicta quidem explicabo mollitia inventore quibusdam.</p>
+  </div>
+  <div class="side-image-content"></div>
+</div>
+
+<ul class="bullets" id="bullets">
+  <li class="bullet">
+    <div class="bullet-icon bullet-icon-1">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2.png
+" alt="">
+    </div>
+    <div class="bullet-content">
+      <h2>This Bullet Title</h2>
+      <p>Lorem dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
+      </div>
+  </li>  
+  <li class="bullet">
+    <div class="bullet-icon bullet-icon-2">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3.png" alt="">
+    </div>
+    <div class="bullet-content">
+      <h2>Another Bullet Title</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum.</p>
+    </div>
+  </li>
+  <li class="bullet">
+    <div class="bullet-icon bullet-icon-3">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_4.png" alt="">
+    </div>
+    <div class="bullet-content">
+      <h2>Last Bullet Title</h2>
+      <p>Lorem ipsum sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
+    </div>
+  </li> 
+  <li class="bullet">
+    <div class="bullet-icon bullet-icon-1">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2.png
+" alt="">
+    </div>
+    <div class="bullet-content">
+      <h2>This Bullet Title</h2>
+      <p>Lorem dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
+      </div>
+  </li>  
+  <li class="bullet">
+    <div class="bullet-icon bullet-icon-2">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3.png" alt="">
+    </div>
+    <div class="bullet-content">
+      <h2>Another Bullet Title</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum.</p>
+    </div>
+  </li>
+  <li class="bullet">
+    <div class="bullet-icon bullet-icon-3">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_4.png" alt="">
+    </div>
+    <div class="bullet-content">
+      <h2>Last Bullet Title</h2>
+      <p>Lorem ipsum sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
+    </div>
+  </li> 
+  <li class="bullet">
+    <div class="bullet-icon bullet-icon-1">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2.png
+" alt="">
+    </div>
+    <div class="bullet-content">
+      <h2>This Bullet Title</h2>
+      <p>Lorem dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
+      </div>
+  </li>  
+  <li class="bullet">
+    <div class="bullet-icon bullet-icon-2">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3.png" alt="">
+    </div>
+    <div class="bullet-content">
+      <h2>Another Bullet Title</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum.</p>
+    </div>
+  </li>
+  <li class="bullet">
+    <div class="bullet-icon bullet-icon-3">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_4.png" alt="">
+    </div>
+    <div class="bullet-content">
+      <h2>Last Bullet Title</h2>
+      <p>Lorem ipsum sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
+    </div>
+  </li> 
+</ul>
+
+
+    <!--<div class="wrapper-for-content-outside-of-footer">
+   Uncomment this whole section for a sticky footer. The content of the page should be inside of this .wrapper-for-content-outside-of-footer
+</div>-->
+
+<footer class="footer-2" role="contentinfo">
   <div class="footer-logo">
     <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo image">
   </div>
-  <div class="footer-links">
     <ul>
-      <li><h3>Content</h3></li>
       <li><a href="javascript:void(0)">About</a></li>
       <li><a href="javascript:void(0)">Contact</a></li>
       <li><a href="javascript:void(0)">Products</a></li>
     </ul>
-    <ul>
-      <li><h3>Follow Us</h3></li>
-      <li><a href="javascript:void(0)">Facebook</a></li>
-      <li><a href="javascript:void(0)">Twitter</a></li>
-      <li><a href="javascript:void(0)">YouTube</a></li>
-    </ul>
-    <ul>
-      <li><h3>Legal</h3></li>
-      <li><a href="javascript:void(0)">Terms and Conditions</a></li>
-      <li><a href="javascript:void(0)">Privacy Policy</a></li>
-    </ul>
-  </div>
 
-  <hr>
+    <div class="footer-secondary-links">
+      <ul>
+        <li><a href="javascript:void(0)">Terms and Conditions</a></li>
+        <li><a href="javascript:void(0)">Privacy Policy</a></li>
+      </ul>
 
-  <p>Disclaimer area lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nostrum repudiandae saepe.</p>
+      <ul class="footer-social">
+        <li><a href="javascript:void(0)">
+          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/facebook-logo-circle.png" alt="Facebook">
+          </a></li>
+        <li><a href="javascript:void(0)">
+          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/twitter-logo-circle.png" alt="Twitter">
+        </a></li>
+        <li><a href="javascript:void(0)">
+          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/youtube-logo-circle.png" alt="YouTube">
+        </a></li>
+      </ul>
+    </div>
 </footer>
 
     <script   src="https://code.jquery.com/jquery-2.2.2.min.js"   integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="   crossorigin="anonymous"></script>
-	<script type="text/javascript" src="/assets/application-ddd4cf0125dc12f57062f469cbf5cb8d8f4fc6c31d1f4ea1b758e6387e0d2a67.js"></script>
+	<script type="text/javascript" src="/assets/application-3d59826738c99f47d2360e7b2752fafe17d66ff30c39fec75cb68a42a017e003.js"></script>
   </body>
 
 </html>
