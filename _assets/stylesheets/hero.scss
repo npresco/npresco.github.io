@@ -1,0 +1,111 @@
+.hero {  
+  $base-border-radius: 3px !default;
+  $action-color: #477DCA !default;
+  $large-screen: em(860) !default;
+  $hero-background-top: #7F99BE; 
+  $hero-background-bottom: #20392B;
+  $hero-color: white;
+  $gradient-angle: 10deg;
+  $hero-image: 'https://images.unsplash.com/photo-1458640904116-093b74971de9?crop=entropy&fit=crop&fm=jpg&h=750&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1450.png';
+  // $hero-image: url(asset_path('brm.svg'));
+  $normal-font: 'Comfortaa', cursive;
+  $fat-font: 'Sigmar One', cursive;
+  $angry-font: 'Rock Salt', cursive;
+  $typed-font: 'Special Elite', cursive;
+
+  
+
+  @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top fixed);
+  font-family: $typed-font;
+  background-color: #324766;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 3em;
+  height: 100vh;
+  .hero-logo img {
+    height: 4em;
+    margin-bottom: 1em;
+  }
+
+  .hero-inner {
+    @include outer-container;
+    @include clearfix;
+    margin: auto;
+    padding: 3.5em;
+    text-align: center;
+
+    .hero-copy {
+      display: inline;
+      text-align: center;
+      color: $hero-color;
+      font-size: 1.6em;
+      margin-bottom: 0.5em;
+      color: black;
+
+      @include media($large-screen) {
+        font-size: 1.8em;
+      }
+      
+      #angry {
+        font-family: $angry-font;
+      }
+      
+      #fat {
+        font-family: $fat-font;
+      }
+      
+      h1 {
+        color: $hero-color;
+        font-size: 1.6em;
+        margin-bottom: 0.5em;
+
+        @include media($large-screen) {
+          font-size: 1.8em;
+        }
+      }
+
+      p {
+        color: $hero-color;
+        line-height: 1.4em;
+        margin: 0 auto 3em auto; 
+
+        @include media($large-screen) {
+          font-size: 1.1em;
+          max-width: 40%;
+        }
+      }
+    }
+  }
+  .scroll-on-page-link {
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 2px solid white;
+    background-color: transparent;
+    position: absolute;
+    bottom:   0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s ease-in-out;
+    
+    &:hover {
+      background-color: rgba(255,255,255,0.7);
+    }
+    
+    &:after {
+      content: "";
+      position: absolute;
+      top: 5%;
+      left: 54%;
+      width: 25px;
+      height: 25px;
+      border-width: 0px 2px 2px 0px;
+      transform: rotate(46deg) translate(-50%) skew(10deg, 10deg);
+      transform-origin: left;
+      border-style: solid;
+      border-color: white;
+    }
+  }
+}
