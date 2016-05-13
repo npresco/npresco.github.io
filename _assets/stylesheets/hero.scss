@@ -2,10 +2,12 @@
 @keyframes background {
   from {
     opacity: 0;
+    height: 100vh;
   }
 
   to {
     opacity: .50;
+    height 50vh;
   }
 }
 
