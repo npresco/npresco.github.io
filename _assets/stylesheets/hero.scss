@@ -1,3 +1,14 @@
+  
+@keyframes background {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: .25;
+  }
+}
+
 .hero {  
   $base-border-radius: 3px !default;
   $action-color: #477DCA !default;
@@ -24,22 +35,6 @@
   padding-bottom: 3em;
   height: 50vh;
   animation: background 6s ease-out forwards;
-  animation-delay: 2s;
-  
-  
-
-  @keyframes background {
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: .25;
-    }
-  }
-    
-  
-  
   
   .hero-logo img {
     height: 4em;
