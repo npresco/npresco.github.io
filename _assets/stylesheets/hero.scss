@@ -5,7 +5,7 @@
   }
 
   to {
-    opacity: .25;
+    opacity: .33;
   }
 }
 
@@ -15,7 +15,7 @@
   $large-screen: em(860) !default;
   $hero-background-top: #7F99BE; 
   $hero-background-bottom: #20392B;
-  $hero-color: white;
+  $hero-color: black;
   $gradient-angle: 10deg;
   $hero-image: url(asset_path('pipeline.png'));
   // $hero-image: url(asset_path('brm.svg')) add url() back into @include backgroup first argument;
@@ -35,6 +35,7 @@
   padding-bottom: 3em;
   height: 50vh;
   animation: background 6s ease-out forwards;
+  animation-delay: 2s;
   
   .hero-logo img {
     height: 4em;
