@@ -1,7 +1,7 @@
   
 @keyframes background-fade {
   from {
-    opacity: 1;
+    opacity: 0;
   }
 
   to {
@@ -9,14 +9,22 @@
   }
 }
 
+@keyframes background-shrink {
+  from {
+    height: 100vh;
+  }
+
+  to {
+    height: 50vh;
+  }
+}
+
+
 .hero {  
   $base-border-radius: 3px !default;
   $action-color: #477DCA !default;
   $large-screen: em(860) !default;
-  $hero-background-top: #7F99BE; 
-  $hero-background-bottom: #20392B;
   $hero-color: black;
-  $gradient-angle: 10deg;
   $hero-image: url(asset_path('pipeline.png'));
   // $hero-image: url(asset_path('brm.svg')) add url() back into @include backgroup first argument;
   $normal-font: 'Comfortaa', cursive;
@@ -26,23 +34,16 @@
 
   
 
-  @include background($hero-image, linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top fixed);
+  @include background($hero-image);
   font-family: $typed-font;
-  background-color: #324766;
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 3em;
-  height: 50vh;
-  // animation-name: background-fade;
-  // animation-duration: 6s;
-  // animation-iteration-count: 1;
-  // animation-direction: normal;
-  // animation-timing-function: ease-out;
-  // animation-fill-mode: forwards;
-  // animation-delay: 0s;
-  
-  animation: background-fade 5s 2s normal;
+  height: 100vh;
+  opacity: 0;
+  animation: background-fade 5s ease-out forwards,
+             background-shrink 2s 5s ease-in-out forwards;
   
   .hero-logo img {
     height: 4em;
