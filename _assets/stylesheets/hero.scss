@@ -6,8 +6,8 @@
   $hero-background-bottom: #20392B;
   $hero-color: white;
   $gradient-angle: 10deg;
-  $hero-image: 'https://images.unsplash.com/photo-1458640904116-093b74971de9?crop=entropy&fit=crop&fm=jpg&h=750&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1450.png';
-  // $hero-image: url(asset_path('brm.svg'));
+  $hero-image: url(asset_path('pipeline.png'));
+  // $hero-image: url(asset_path('brm.svg')) add url() back into @include backgroup first argument;
   $normal-font: 'Comfortaa', cursive;
   $fat-font: 'Sigmar One', cursive;
   $angry-font: 'Rock Salt', cursive;
@@ -15,14 +15,32 @@
 
   
 
-  @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top fixed);
+  @include background($hero-image, linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top fixed);
   font-family: $typed-font;
   background-color: #324766;
-  background-position: top;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 3em;
-  height: 100vh;
+  height: 50vh;
+  animation: background 6s ease-out forwards;
+  animation-delay: 2s;
+  
+  
+
+  @keyframes background {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: .25;
+    }
+  }
+    
+  
+  
+  
   .hero-logo img {
     height: 4em;
     margin-bottom: 1em;
@@ -31,6 +49,7 @@
   .hero-inner {
     @include outer-container;
     @include clearfix;
+    color: $hero-color;
     margin: auto;
     padding: 3.5em;
     text-align: center;
@@ -38,10 +57,10 @@
     .hero-copy {
       display: inline;
       text-align: center;
-      color: $hero-color;
       font-size: 1.6em;
+      margin-top: 2em;
       margin-bottom: 0.5em;
-      color: black;
+      color: $hero-color;
 
       @include media($large-screen) {
         font-size: 1.8em;
@@ -68,7 +87,6 @@
       p {
         color: $hero-color;
         line-height: 1.4em;
-        margin: 0 auto 3em auto; 
 
         @include media($large-screen) {
           font-size: 1.1em;
