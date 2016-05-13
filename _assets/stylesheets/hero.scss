@@ -34,7 +34,13 @@
   background-size: cover;
   padding-bottom: 3em;
   height: 50vh;
-  animation: background 7s ease-out 0s 1 forward;
+  animation-name: background;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
   
   .hero-logo img {
     height: 4em;
