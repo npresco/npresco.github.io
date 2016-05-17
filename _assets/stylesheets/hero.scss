@@ -44,6 +44,7 @@
   
   img {
   height: 100vh;
+  max-width: 100%;
   opacity: 0;
   animation: background-fade 5s ease-out forwards,
              background-shrink 4s 5s ease-in-out forwards;
