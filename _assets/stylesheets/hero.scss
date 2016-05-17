@@ -19,6 +19,17 @@
   }
 }
 
+@keyframes background-clipping {
+  from {
+    clip-path: none;
+  }
+  
+  to {
+    clip-path: url(#clipping);
+  }
+}
+
+
 .hero {  
   $base-border-radius: 3px !default;
   $action-color: #477DCA !default;
@@ -43,7 +54,8 @@
   opacity: 0;
   clip-path: url(#clipping);
   animation: background-fade 5s ease-out forwards,
-             background-shrink 4s 5s ease-in-out forwards;
+             background-shrink 4s 5s ease-in-out forwards,
+             background-clipping 4s 9s ease-in-out forwards;
   
   .hero-logo img {
     height: 4em;
