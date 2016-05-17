@@ -25,7 +25,7 @@
   $action-color: #477DCA !default;
   $large-screen: em(860) !default;
   $hero-color: white;
-  // $hero-image: url(asset_path('pipeline.png'));
+  $hero-image: url(asset_path('pipeline.png'));
   // $hero-image: url(asset_path('brm.svg')) add url() back into @include backgroup first argument;
   $normal-font: 'Comfortaa', cursive;
   $fat-font: 'Sigmar One', cursive;
@@ -34,27 +34,16 @@
 
   
 
-  // @include background($hero-image);
+  @include background($hero-image);
   font-family: $typed-font;
-  // background-position: bottom;
-  // background-repeat: no-repeat;
-  // background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-bottom: 3em;
-  
-  #hero-image {
-    height: 100vh;
-    animation: background-shrink 4s 5s ease-in-out forwards;
-    
-    img {
-      max-width: 100%;
-      max-height: 100%;
-      width: auto;
-      opacity: 0;
-      animation: background-fade 5s ease-out forwards;
-    }
-  }
-  
-
+  height: 100vh;
+  opacity: 0;
+  animation: background-fade 5s ease-out forwards,
+             background-shrink 4s 5s ease-in-out forwards;
   
   .hero-logo img {
     height: 4em;
