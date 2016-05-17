@@ -21,7 +21,7 @@
 
 @keyframes background-clipping {
   from {
-    clip-path: none;
+    clip-path: ellipse(60px 40px at 75px 30px);
   }
   
   to {
@@ -52,6 +52,7 @@
   padding-bottom: 3em;
   height: 100vh;
   opacity: 0;
+  clip-path: ellipse(60px 40px at 75px 30px);
   animation: background-fade 5s ease-out forwards,
              background-shrink 4s 5s ease-in-out forwards,
              background-clipping 4s 9s ease-in-out forwards;
