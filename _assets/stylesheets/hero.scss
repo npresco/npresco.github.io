@@ -41,15 +41,20 @@
   // background-size: cover;
   padding-bottom: 3em;
   
-  
-  img {
-  height: 100vh;
-  max-width: 100%;
-  opacity: 0;
-  animation: background-fade 5s ease-out forwards,
-             background-shrink 4s 5s ease-in-out forwards;
-  
+  #hero-image {
+    height: 100vh;
+    animation: background-shrink 4s 5s ease-in-out forwards;
+    
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      height: auto;
+      opacity: 0;
+      animation: background-fade 5s ease-out forwards;
+    }
   }
+  
+
   
   .hero-logo img {
     height: 4em;
