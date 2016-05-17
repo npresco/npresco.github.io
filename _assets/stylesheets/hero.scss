@@ -47,7 +47,8 @@
     
     img {
       max-width: 100%;
-      height: auto;
+      max-height: 100%;
+      width: auto;
       opacity: 0;
       animation: background-fade 5s ease-out forwards;
     }
