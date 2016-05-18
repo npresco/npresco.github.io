@@ -31,7 +31,7 @@ assets:
     - _assets/stylesheets
     - _assets/fonts
   features:
-    liquid: false 
+    # liquid: false 
 
 # Build settings
 markdown: kramdown
