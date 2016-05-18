@@ -109,7 +109,7 @@ KUTE.fromTo('#N', {
   translate: 50,
   fill: "aqua",
   stroke: "aqua"
-}).start(4000);
+}).start(9000);
 KUTE.fromTo('#P', {
   translate: 0,
   fill: "black",
@@ -118,15 +118,15 @@ KUTE.fromTo('#P', {
   translate: -49,
   fill: "red",
   stroke: "red"
-}).start(4000);
+}).start(9000);
 
 N.animate({
   opacity: 0.5
-}, 5000)
+}, 10000)
 
 P.animate({
   opacity: 0.5
-}, 5000)
+}, 10000)
 
 // setTimeout(function(){ 
 //   KUTE.fromTo('#N',{translate:0},{translate: 100}).start(), 4000 });
