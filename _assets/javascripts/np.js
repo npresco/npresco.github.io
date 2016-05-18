@@ -90,15 +90,15 @@ var lag = 100; // number of miliseconds for the script to built tween objects fo
 
 // step4 - we just start the animation for all elements at once
 for (var i = 0; i < numberOfElements; i++) {
-  tweens[i].start(now + lag);
+  tweens[i].start(now + lag+5000);
 }
 
 for (var i = 0; i < numberOfElements; i++) {
-  tweens2[i].start(now + lag + 1000);
+  tweens2[i].start(now + lag + 6000);
 }
 
 for (var i = 0; i < dropNumber; i++) {
-  tweens3[i].start(now + lag + 2000);
+  tweens3[i].start(now + lag + 7000);
 }
 
 KUTE.fromTo('#N', {
