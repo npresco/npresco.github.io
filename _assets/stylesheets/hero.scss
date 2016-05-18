@@ -19,16 +19,6 @@
   }
 }
 
-@keyframes background-clipping {
-  from {
-    clip-path: ellipse(60px 40px at 75px 30px);
-  }
-  
-  to {
-    clip-path: url(#clipping);
-  }
-}
-
 
 .hero {  
   $base-border-radius: 3px !default;
@@ -55,7 +45,6 @@
   clip-path: ellipse(60px 40px at 75px 30px);
   animation: background-fade 5s ease-out forwards,
              background-shrink 4s 5s ease-in-out forwards,
-             background-clipping 4s 9s ease-in-out forwards;
   
   .hero-logo img {
     height: 4em;
