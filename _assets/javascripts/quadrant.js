@@ -13,7 +13,6 @@ function setAttr(letter) {
     'stroke-dashoffset': length,
     'stroke': "#808080",
     'stroke-width': 0.5,
-    'fill-opacity': 0,
   })
 
 }
@@ -73,7 +72,7 @@ for (var i = 0; i < numberOfDropLetters; i++) {
   }, {
     opacity: 0
   }, {
-    duration: 100
+    duration: 200
   });
   ctFadeOutDropTweens.push(tween);
 }
