@@ -8,6 +8,5 @@
 #= require vendor/kute-svg.min.js
 #= require vendor/kute-text.min.js
 #= require vendor/snap.svg-min.js
-#= require vendor/typed.js
 
 #= require_tree .
