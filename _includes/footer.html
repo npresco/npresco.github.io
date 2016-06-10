@@ -1,27 +1,39 @@
-<footer class="footer-2" role="contentinfo">
-  <div class="footer-logo">
-    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo image">
-  </div>
-    <ul>
-      <li><a href="javascript:void(0)">About</a></li>
-      <li><a href="javascript:void(0)">Contact</a></li>
-    </ul>
+<footer class="site-footer">
 
-    <div class="footer-secondary-links">
-      <ul>
-        <li><a href="javascript:void(0)">2016 Noah Prescott</a></li>
-      </ul>
+  <div class="wrapper">
 
-      <ul class="footer-social">
-        <li><a href="javascript:void(0)">
-          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/facebook-logo-circle.png" alt="Facebook">
-          </a></li>
-        <li><a href="javascript:void(0)">
-          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/twitter-logo-circle.png" alt="Twitter">
-        </a></li>
-        <li><a href="javascript:void(0)">
-          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/youtube-logo-circle.png" alt="YouTube">
-        </a></li>
-      </ul>
+    <!--<h2 class="footer-heading">{{ site.title }}</h2>-->
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <!--<li>{{ site.title }}</li>-->
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <!--<ul class="social-media-list">-->
+        <!--  {% if site.github_username %}-->
+        <!--  <li>-->
+        <!--    {% include icon-github.html username=site.github_username %}-->
+        <!--  </li>-->
+        <!--  {% endif %}-->
+
+        <!--  {% if site.twitter_username %}-->
+        <!--  <li>-->
+        <!--    {% include icon-twitter.html username=site.twitter_username %}-->
+        <!--  </li>-->
+        <!--  {% endif %}-->
+        <!--</ul>-->
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>{{ site.description }}</p>
+        <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+      </div>
     </div>
+
+  </div>
+
 </footer>
