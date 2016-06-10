@@ -2,26 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Noah Prescott</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    <description>Come out to the coast, we&#39;ll get together, have a few laughs.
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 03 Jun 2016 15:53:53 +0000</pubDate>
-    <lastBuildDate>Fri, 03 Jun 2016 15:53:53 +0000</lastBuildDate>
-    <generator>Jekyll v3.1.2</generator>
+    <pubDate>Fri, 10 Jun 2016 18:57:12 +0000</pubDate>
+    <lastBuildDate>Fri, 10 Jun 2016 18:57:12 +0000</lastBuildDate>
+    <generator>Jekyll v3.1.6</generator>
     
       <item>
-        <title>Welcome to Jekyll!</title>
-        <description>
+        <title>I Have Made A Jekyll Site</title>
+        <description>&lt;p&gt;I am just getting this up and running. More coming Soon!&lt;/p&gt;
 </description>
-        <pubDate>Fri, 01 Apr 2016 15:28:50 +0000</pubDate>
-        <link>/jekyll/update/2016/04/01/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">/jekyll/update/2016/04/01/welcome-to-jekyll.html</guid>
+        <pubDate>Fri, 10 Jun 2016 00:00:00 +0000</pubDate>
+        <link>/2016/06/10/I-Have-Made-A-Jekyll-Site.html</link>
+        <guid isPermaLink="true">/2016/06/10/I-Have-Made-A-Jekyll-Site.html</guid>
         
-        
-        <category>jekyll</category>
-        
-        <category>update</category>
         
       </item>
     
