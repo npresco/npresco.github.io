@@ -5,11 +5,6 @@
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
-    // background-image: url("/mountains.png");
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // background-size: contain;
-    // background-attachment: fixed;
 
     // Positioning context for the mobile navigation icon
     position: relative;
@@ -250,3 +245,24 @@
 * Portfolio
 **/
 
+#sarah, #chai, #mm {
+    box-sizing: border-box;
+    max-width: 50%;
+    margin-right: 10px;
+}
+
+#sarah-text, #chai-text, #mm-text {
+    box-sizing: border-box;
+    display: inline;
+    max-width: 50%;
+}
+
+
+/**
+* About
+**/
+
+.center {
+    display: block;
+    margin: auto;
+}

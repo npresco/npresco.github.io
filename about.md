@@ -6,7 +6,7 @@ permalink: /about/
 
 
 
-I am a computer person and an outdoor person. I am a freelancer living and working in Richmond VA.
+I am a computer person and an outdoor person. I live and work in Richmond VA.
 
 I look like this:
 
