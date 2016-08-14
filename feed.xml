@@ -6,20 +6,9 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 14 Aug 2016 00:50:52 +0000</pubDate>
-    <lastBuildDate>Sun, 14 Aug 2016 00:50:52 +0000</lastBuildDate>
+    <pubDate>Sun, 14 Aug 2016 01:00:43 +0000</pubDate>
+    <lastBuildDate>Sun, 14 Aug 2016 01:00:43 +0000</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
-    
-      <item>
-        <title>I Have Made A Jekyll Site</title>
-        <description>&lt;p&gt;I am just getting this up and running. More coming Soon!&lt;/p&gt;
-</description>
-        <pubDate>Fri, 10 Jun 2016 00:00:00 +0000</pubDate>
-        <link>/2016/06/10/I-Have-Made-A-Jekyll-Site.html</link>
-        <guid isPermaLink="true">/2016/06/10/I-Have-Made-A-Jekyll-Site.html</guid>
-        
-        
-      </item>
     
   </channel>
 </rss>
