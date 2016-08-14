@@ -22,6 +22,11 @@
     <script type="text/javascript" src="{{ "/js/lightbox-plus-jquery.min.js" | prepend: site.baseurl }}"></script>
     <script type="text/javascript" src="{{ "/js/name-animation.js" | prepend: site.baseurl }}"></script>
 
+
+    {% if jekyll.environment == 'production' %}
+    {% include analytics.html %}
+    {% endif %}
+
   </body>
 
 </html>
