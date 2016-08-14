@@ -9,6 +9,19 @@ dl, dd, ol, ul, figure {
 }
 
 
+/**
+ * Box sizing
+ */
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
 /**
  * Basic styling
@@ -203,4 +216,64 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+
+
+.portfolio-item-wrapper {
+  float: left;
+  width: 100%;
+  height: 33vh;
+  margin-right: 5%;
+  margin-bottom: 75px;
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+  
+  @media (min-width: 800px) {
+    width: 45%;
+    height: 50vh;
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.portfolio-pic {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5%;
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.button-row {
+    width: 100%;
+    text-align: center;
+}
+
+button {
+    height: 50px;
+    width: 100px;
+    border-radius: 15px;
+    padding: 0;
+    border: none;
+    background: none;
+	transition: border-radius 0.3s   linear ;
+}
+
+
+button:hover {
+    cursor: pointer;
+    opacity: .75;
+	transition: border-radius 0.3s   linear ;
+}
+
+.site-button {
+    background-color: rgba(125, 150, 130, 0.5);
+}
+
+.detail-button {
+    background-color: rgba(128, 162, 176, 0.5);
 }
